@@ -1,0 +1,69 @@
+.related_posts_container{
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 1%;
+ }
+ .related_posts_container *{
+    margin: 10px;
+ }
+   
+ .post_single_row{
+    width: 100%;
+    float: left;
+    border-bottom: 2px solid #dedede;
+ }
+ 
+ .post_heading {
+    font-family: 'Roboto';
+    color: #222;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+ }
+ .post_published{
+     font-style: italic;
+     color: #2196f3;
+     text-align:left;
+   }
+ 
+ .details{
+    display: block; /* or inline-block */
+    text-decoration: none;
+    font-family: 'Roboto';
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+    line-height: 1.8em;    
+ }
+ 
+ .thumbnail{
+    width:6em; 
+    height: 6em; 
+    float: left;
+ }
+ 
+ .read_more{
+    text-align: right;
+ }
+ 
+ .read_more > a {
+    color: #2196f3;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+    outline: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+ }
+ 
+ .read_more a:visited {
+    color: #2196f3;
+ }
