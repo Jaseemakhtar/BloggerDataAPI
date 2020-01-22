@@ -3,23 +3,20 @@ var displayFeed = function(response) {
 	var allEntries = response.feed.entry;
 
 	var container = document.querySelector('.related_posts_container');
-  var numbers = [];
+    var numbers = [];
 	
-
 	for (var i = 0; i < allEntries.length; i++) {
 
-    if (typeof maxNoPosts !== 'undefined') {
-			if (i >= maxNoPosts) {
-				break;
-			}	
-		}
+        if (typeof maxNoPosts !== 'undefined')
+            if (i >= maxNoPosts) 
+                break;	
     
         var number;
 
 		while(true){
 			number = Math.floor(Math.random() * allEntries.length);
 			if (numbers.indexOf(number) !== -1) {
-				console.log("Number is already present: " + number);
+				//console.log("Number is already present: " + number);
 			}else{
 				numbers.push(number);
 				break;
@@ -43,7 +40,7 @@ var displayFeed = function(response) {
 		for(var x in allEntries[number]){
 			var singleEntry = allEntries[number][x];
 
-			console.log(x);
+			//console.log(x);
 			if (x === "media$thumbnail") {
 				//Thumbnail url
 				thumbnailUrl = singleEntry.url;
